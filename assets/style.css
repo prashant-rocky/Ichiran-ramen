@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+h1,
+h2 {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+h3 {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.navbar {
+    background-color: #0c3b2e;
+}
+
+.mainColor {
+    color: #0c3b2e;
+}
+
+.tabs {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bolder;
+}
+
+.myBtn {
+    background-color: #0c3b2e !important;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.btnHover {
+    border: 1px solid #0c3b2e !important;
+}
+
+.btnHover:hover {
+    background-color: #0c3b2e !important;
+    color: white !important;
+}
+
+.sliderContent {
+    padding: 200px;
+    padding-right: 0%;
+}
+
+.footer p,
+.footer a {
+    color: white;
+}
+
+.footer .social-media i {
+    margin-right: 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.tabSlider {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tabSlider h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.tabSlider h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.tabSlider p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* swiper */
+.mySwiper {
+    width: 340px;
+    height: 420px;
+    position: absolute;
+    top: 150px;
+    right: 0px;
+}
+
+@media (max-width: 768px) {
+  .mySwiper {
+    position: absolute; /* only desktop/tablet */
+    top: 0%;
+  }
+}
+
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.Tslide:nth-child(1n) {
+    background-image: url(images/gallary2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Tslide:nth-child(2n) {
+    background-image: url(images/gallary3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Tslide:nth-child(3n) {
+    background-image: url(images/gallary1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Tslide:nth-child(4n) {
+    background-image: url(images/gallary4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Tslide:nth-child(5n) {
+    background-image: url(images/gallary5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Tslide:nth-child(6n) {
+    background-image: url(images/gallary1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Tslide:nth-child(7n) {
+    background-image: url(images/gallary2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Tslide:nth-child(8n) {
+    background-image: url(images/gallary3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Tslide:nth-child(9n) {
+    background-image: url(images/gallary3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Tslide:nth-child(10n) {
+    background-image: url(images/gallary4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Tswiper {
+    width: 100%;
+    height: 100%;
+}
+
+.Tswiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Tswiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.productImg{
+    border-radius: 50%;
+}
