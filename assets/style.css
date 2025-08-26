@@ -112,13 +112,14 @@ h3 {
 
 @media (max-width: 768px) {
   .mySwiper {
-    position: absolute; /* only desktop/tablet */
+    position: static; /* only desktop/tablet */
     top: 0%;
     left: 0%;
   }
+  .swiper.swiper-cards{
+    overflow: hidden !important;
+  }
 }
-
-
 .swiper-slide {
     display: flex;
     align-items: center;
