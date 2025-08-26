@@ -61,6 +61,11 @@ h3 {
     padding: 200px;
     padding-right: 0%;
 }
+@media (max-width: 768px) {
+  .sliderContent {
+   padding-left: 60px;
+  }
+}
 
 .footer p,
 .footer a {
@@ -109,6 +114,7 @@ h3 {
   .mySwiper {
     position: absolute; /* only desktop/tablet */
     top: 0%;
+    left: 0%;
   }
 }
 
