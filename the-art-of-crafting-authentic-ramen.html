@@ -116,46 +116,6 @@
                     </p>
                 </div>
             </div>
-
-            <!-- Comments Section -->
-            <div class="row mt-5">
-                <div class="col-md-10 mx-auto">
-                    <h3 class="mb-4">Comments</h3>
-                    <div class="mb-3 p-3 border rounded">
-                        <strong>Yuki Tanaka</strong> <span class="text-muted">• August 20, 2025</span>
-                        <p>Such a beautifully written blog! I could almost taste the ramen while reading. Can’t wait to
-                            visit soon!</p>
-                    </div>
-                    <div class="mb-3 p-3 border rounded">
-                        <strong>James Carter</strong> <span class="text-muted">• August 22, 2025</span>
-                        <p>This made me appreciate the art of ramen even more. Your dedication to authentic flavors
-                            truly shines through!</p>
-                    </div>
-                    <div class="mb-3 p-3 border rounded">
-                        <strong>Haruka Sato</strong> <span class="text-muted">• August 24, 2025</span>
-                        <p>I love how you highlight the cultural side of ramen. It’s not just food – it’s an experience.
-                            Great read!</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Comment Form -->
-            <div class="row mt-4">
-                <div class="col-md-10 mx-auto">
-                    <h4 class="mb-3">Leave a Comment</h4>
-                    <form id="blogCommentForm" class="needs-validation" novalidate>
-                        <div class="mb-3">
-                            <label class="form-label">Name</label>
-                            <input type="text" class="form-control" required />
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Comment</label>
-                            <textarea class="form-control" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="myBtn">Post Comment</button>
-                    </form>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -248,25 +208,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        (function () {
-            'use strict'
-            const form = document.getElementById('blogCommentForm');
-            if (!form) return;
-            form.addEventListener('submit', function (e) {
-                if (!form.checkValidity()) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                } else {
-                    // For demo: prevent actual submit and show simple alert
-                    e.preventDefault();
-                    alert('Thank you! Your comment has been received and will appear after moderation.');
-                    form.reset();
-                }
-                form.classList.add('was-validated');
-            }, false);
-        })();
-    </script>
 </body>
 
 </html>

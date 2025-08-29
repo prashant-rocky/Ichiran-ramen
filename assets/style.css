@@ -6,7 +6,12 @@
     padding: 0%;
     margin: 0%;
 }
-
+@font-face {
+  font-family: 'Seravek Basic';
+  src: url('font/Seravek\ Basic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 h1,
 h2 {
     font-family: "Noto Serif", serif;
@@ -18,7 +23,7 @@ h2 {
 }
 
 h3 {
-    font-family: "Edu NSW ACT Cursive", cursive;
+    font-family: "Seravek Basic", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;

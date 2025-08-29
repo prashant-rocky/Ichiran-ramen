@@ -117,81 +117,10 @@
                         a memory waiting to be cherished.
                     </p>
                 </section>
-
-                <!-- Comments -->
-                <section id="comments" class="comments mb-5">
-                    <h4 class="mb-4">Comments (3)</h4>
-
-                    <div class="list-group mb-3">
-                        <div class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h6 class="mb-1">Emily Tan</h6>
-                                <small class="text-muted"><time datetime="2025-08-21">August 21, 2025</time></small>
-                            </div>
-                            <p class="mb-1">Beautifully written! Ramen truly feels like home whenever I eat at Ichiran.
-                            </p>
-                        </div>
-
-                        <div class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h6 class="mb-1">Ryo Matsuda</h6>
-                                <small class="text-muted"><time datetime="2025-08-22">August 22, 2025</time></small>
-                            </div>
-                            <p class="mb-1">I visited last week, and your description is exactly what I felt—it’s more
-                                than food, it’s comfort.</p>
-                        </div>
-
-                        <div class="list-group-item">
-                            <div class="d-flex w-100 justify-content-between">
-                                <h6 class="mb-1">Sophia Chen</h6>
-                                <small class="text-muted"><time datetime="2025-08-23">August 23, 2025</time></small>
-                            </div>
-                            <p class="mb-1">Love how you capture the atmosphere. Ichiran has been my favorite ramen spot
-                                since moving to Tokyo!</p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Comment form -->
-                <section id="leave-comment" class="leave-comment">
-                    <h4 class="mb-3">Leave a Comment</h4>
-                    <form id="blogCommentForm2" class="needs-validation" novalidate>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <label for="commentName2" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="commentName2" name="name" required />
-                                <div class="invalid-feedback">Please enter your name.</div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <label for="commentEmail2" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="commentEmail2" name="email" required />
-                                <div class="invalid-feedback">Please enter a valid email.</div>
-                            </div>
-
-                            <div class="col-12">
-                                <label for="commentText2" class="form-label">Comment</label>
-                                <textarea class="form-control" id="commentText2" name="comment" rows="5"
-                                    required></textarea>
-                                <div class="invalid-feedback">Please write your comment.</div>
-                            </div>
-
-                            <div class="col-12">
-                                <button type="submit" class="myBtn">Post Comment</button>
-                            </div>
-                        </div>
-                    </form>
-                </section>
             </article>
         </div>
     </section>
-
-
-
-
     <!-- Optional: Small JS snippet to enable basic client-side validation -->
-
-
     <hr>
     <!-- Footer -->
     <footer class="footer navbar text-white pt-5">
@@ -282,25 +211,6 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- JS for form validation -->
-    <script>
-        (function () {
-            'use strict'
-            const form2 = document.getElementById('blogCommentForm2');
-            if (!form2) return;
-            form2.addEventListener('submit', function (e) {
-                if (!form2.checkValidity()) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                } else {
-                    // Demo only
-                    e.preventDefault();
-                    alert('Thank you! Your comment has been submitted for moderation.');
-                    form2.reset();
-                }
-                form2.classList.add('was-validated');
-            }, false);
-        })();
-    </script>
 </body>
 
 </html>
