@@ -186,14 +186,15 @@
     </footer>
     <script>
         // ---------------- Menu Data ----------------
-        const menuData1 = [
+        const myMenu1
+         = [
             { id: 1, name: "Classic Tonkotsu Ramen", description: "Rich pork bone broth with handmade noodles, chashu, and scallions.", price: "¥1,100", image: "assets/images/product1.jpg" },
             { id: 2, name: "Spicy Miso Ramen", description: "Bold miso broth with a spicy kick, ground pork, and fresh toppings.", price: "¥1,250", image: "assets/images/product2.jfif" },
             { id: 3, name: "Shoyu Ramen", description: "Savory soy sauce base with tender noodles, bamboo shoots, and soft-boiled egg.", price: "¥1,000", image: "assets/images/product3.jpg" },
             { id: 4, name: "Vegetarian Ramen", description: "Light vegetable broth with tofu, mushrooms, corn, and seasonal greens.", price: "¥950", image: "assets/images/product4.jpg" }
         ];
 
-        const menuData2 = [
+        const myMenu2 = [
             { id: 5, name: "Black Garlic Ramen", description: "Tonkotsu broth infused with roasted black garlic oil for deep flavor.", price: "¥1,200", image: "assets/images/product5.jpg" },
             { id: 6, name: "Seafood Ramen", description: "A rich blend of shrimp, squid, and fish in a flavorful miso broth.", price: "¥1,350", image: "assets/images/product6.jpg" },
             { id: 7, name: "Deluxe Chashu Ramen", description: "Extra slices of slow-braised pork belly with a hearty tonkotsu broth.", price: "¥1,400", image: "assets/images/product7.jpg" },
@@ -222,25 +223,26 @@
         document.addEventListener("DOMContentLoaded", () => {
             const singleMenu1 = document.getElementById("singleMenu1");
             if (singleMenu1) {
-                menuData1.forEach(menu => {
+                myMenu1
+                .forEach(menu => {
                     singleMenu1.innerHTML += createMenuItem(menu);
                 });
             }
 
             const singleMenu2 = document.getElementById("singleMenu2");
             if (singleMenu2) {
-                menuData2.forEach(menu => {
+                myMenu2.forEach(menu => {
                     singleMenu2.innerHTML += createMenuItem(menu);
                 });
             }
         });
     </script>
     <script defer src="https://www.termsfeed.com/public/cookie-consent/4.2.0/cookie-consent.js"></script>
-    <script src="assets/script.js"></script>
     <!-- ✅ Bootstrap JS bundle (required for toggler & dropdowns) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/script.js"></script>
 
 
 </body>
